@@ -44,6 +44,10 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
 -- Setup Color Scheme
+vim.g.gruvbox_baby_function_style = "NONE"
+vim.g.gruvbox_baby_keyword_style = "italic"
+-- vim.g.gruvbox_baby_highlights = {Normal = {fg = "#123123", bg = "NONE", style="underline"}}
+vim.g.gruvbox_baby_telescope_theme = 1
 vim.cmd.colorscheme "gruvbox-baby" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 -- Setup Telescope
