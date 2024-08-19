@@ -1,3 +1,6 @@
+-- Source: https://github.com/alexghergh/nvim-tmux-navigation
+-- Guide: https://www.youtube.com/watch?v=_YaI2vDbk0o
+
 return {
   "alexghergh/nvim-tmux-navigation",
   config = function()
