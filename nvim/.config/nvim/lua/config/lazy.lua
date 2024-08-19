@@ -43,11 +43,7 @@ require("lazy").setup({
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 
--- Setup Mason
--- require("mason").setup()
-
 -- Setup Color Scheme
--- require("catppuccin").setup()
 vim.cmd.colorscheme "gruvbox-baby" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 -- Setup Telescope
