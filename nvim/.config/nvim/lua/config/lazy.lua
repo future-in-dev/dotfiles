@@ -44,8 +44,11 @@ require("mason").setup()
 
 -- Setup Color Scheme
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin-macchiato" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+vim.cmd.colorscheme "gruvbox-baby" -- catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 -- Setup Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
+
+-- Setup Neotree
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
