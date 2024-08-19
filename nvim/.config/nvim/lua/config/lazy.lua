@@ -34,10 +34,14 @@ require("lazy").setup({
   checker = { enabled = true },
   -- disable luarocks
   rocks = {
-	  enabled = false,
-	  hererocks = false
+    enabled = false,
+    hererocks = false
   },
 })
+
+-- Source: https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn&index=1
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
 
 -- Setup Mason
 require("mason").setup()
