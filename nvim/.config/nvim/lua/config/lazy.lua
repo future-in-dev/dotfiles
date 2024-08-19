@@ -34,5 +34,9 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
---Setup Mason
+-- Setup Mason
 require("mason").setup()
+
+-- Setup Color Scheme
+require("catppuccin").setup()
+vim.cmd.colorscheme "catppuccin"
