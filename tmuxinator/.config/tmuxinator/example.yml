@@ -1,7 +1,7 @@
 # /Users/future/.config/tmuxinator/example.yml
 
 name: example
-root: ~/<%= ENV["PROJECTS_FOLDER"] %>/example-project/
+root: <%= ENV["PROJECTS_FOLDER"] %>example-project/
 
 # Optional tmux socket
 # socket_name: foo

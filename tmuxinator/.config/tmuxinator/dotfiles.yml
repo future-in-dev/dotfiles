@@ -1,7 +1,7 @@
 # /Users/future/.config/tmuxinator/dotfiles.yml
 
 name: dotfiles
-root: ~/<%= ENV["PROJECTS_FOLDER"] %>/dotfiles/
+root: <%= ENV["PROJECTS_FOLDER"] %>dotfiles/
 
 # Optional tmux socket
 # socket_name: foo
