@@ -55,8 +55,6 @@ windows:
           - nvim
         - Debagging:
           - echo "pane for debagging"
-        - Resources:
-          - htop
   - Version-Control:
       layout: main-horizontal
       panes:
