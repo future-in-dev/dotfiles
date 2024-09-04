@@ -122,24 +122,24 @@ alt-shift-equal = 'resize smart +50'
 ctrl-1 = 'workspace 1' # Finder
 ctrl-2 = 'workspace 2' # Telegram, Airmail
 ctrl-3 = 'workspace 3' # Todoist
-ctrl-4 = 'workspace 4' # Bear Noter
-ctrl-5 = 'workspace 5' # iTerm
-ctrl-6 = 'workspace 6' # Browser Safari, Yandex, Chrome
-ctrl-7 = 'workspace 7' # LibreOffice, Numbers, Pages, Keynote
+ctrl-4 = 'workspace 4' # iTerm
+ctrl-5 = 'workspace 5' # Bear Notes
+ctrl-6 = 'workspace 6' # LibreOffice, Numbers, Pages, Keynote
+ctrl-7 = 'workspace 7' # Browser Safari, Yandex, Chrome, Yandex Music, Apple Music, Dark Noise
 ctrl-8 = 'workspace 8' # Shotcut
 ctrl-9 = 'workspace 9' # Figma, Pixelmator
 ctrl-0 = 'workspace 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-ctrl-shift-1 = 'move-node-to-workspace 1' # Finder
-ctrl-shift-2 = 'move-node-to-workspace 2' # Telegram, Airmail
-ctrl-shift-3 = 'move-node-to-workspace 3' # Todoist
-ctrl-shift-4 = 'move-node-to-workspace 4' # Bear Notes
-ctrl-shift-5 = 'move-node-to-workspace 5' # iTerm
-ctrl-shift-6 = 'move-node-to-workspace 6' # Browser Safari, Yandex, Chrome
-ctrl-shift-7 = 'move-node-to-workspace 7' # LibreOffice, Numbers, Pages, Keynote
-ctrl-shift-8 = 'move-node-to-workspace 8' # Shotcut
-ctrl-shift-9 = 'move-node-to-workspace 9' # Figma, Pixelmator
+ctrl-shift-1 = 'move-node-to-workspace 1'
+ctrl-shift-2 = 'move-node-to-workspace 2'
+ctrl-shift-3 = 'move-node-to-workspace 3'
+ctrl-shift-4 = 'move-node-to-workspace 4'
+ctrl-shift-5 = 'move-node-to-workspace 5'
+ctrl-shift-6 = 'move-node-to-workspace 6'
+ctrl-shift-7 = 'move-node-to-workspace 7'
+ctrl-shift-8 = 'move-node-to-workspace 8'
+ctrl-shift-9 = 'move-node-to-workspace 9'
 ctrl-shift-0 = 'move-node-to-workspace 10'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
@@ -165,6 +165,7 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 # Source: https://www.josean.com/posts/how-to-setup-aerospace-tiling-window-manager
+# run 'aerospace list-apps' to find app's id
 # Workspace 1
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
@@ -185,32 +186,41 @@ if.app-id = 'com.todoist.mac.Todoist'
 run = "move-node-to-workspace 3"
 # Workspace 4
 [[on-window-detected]]
-if.app-id = 'net.shinyfrog.bear'
+if.app-id = 'com.googlecode.iterm2'
 run = "move-node-to-workspace 4"
 # Workspace 5
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
+if.app-id = 'net.shinyfrog.bear'
 run = "move-node-to-workspace 5"
 # Workspace 6
 [[on-window-detected]]
-if.app-id = 'com.apple.Safari'
+if.app-id = 'org.libreoffice.script'
 run = "move-node-to-workspace 6"
 [[on-window-detected]]
-if.app-id = 'ru.yandex.desktop.yandex-browser'
+if.app-id = 'com.apple.iWork.Numbers'
 run = "move-node-to-workspace 6"
 [[on-window-detected]]
-if.app-id = 'com.google.Chrome'
+if.app-id = 'com.apple.iWork.Keynote'
+run = "move-node-to-workspace 6"
+[[on-window-detected]]
+if.app-id = 'com.apple.iWork.Pages'
 run = "move-node-to-workspace 6"
 # Workspace 7
 [[on-window-detected]]
-if.app-id = 'org.libreoffice.script'
+if.app-id = 'com.apple.Safari'
 run = "move-node-to-workspace 7"
 [[on-window-detected]]
-if.app-id = 'com.apple.iWork.Numbers'
+if.app-id = 'ru.yandex.desktop.yandex-browser'
 run = "move-node-to-workspace 7"
 [[on-window-detected]]
-if.app-id = 'com.apple.iWork.Keynote'
+if.app-id = 'com.google.Chrome'
 run = "move-node-to-workspace 7"
 [[on-window-detected]]
-if.app-id = 'com.apple.iWork.Pages'
+if.app-id = 'ru.yandex.desktop.music'
+run = "move-node-to-workspace 7"
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+run = "move-node-to-workspace 7"
+[[on-window-detected]]
+if.app-id = 'com.charliemchapman.dark-noise'
 run = "move-node-to-workspace 7"
