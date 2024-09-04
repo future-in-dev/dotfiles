@@ -36,7 +36,7 @@ root: <%= ENV["PROJECTS_FOLDER"] %>example-project/
 # tmux_command: byobu
 
 # Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-startup_window: Editor
+startup_window: editor
 
 # Specifies (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
 startup_pane: 0
@@ -45,20 +45,20 @@ startup_pane: 0
 # attach: false
 
 windows:
-  - Editor:
+  - editor:
       layout: main-horizontal
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - NeoVim:
+        - neovim:
+          - tmux resize-pane -t example:0.0 -D 10
           - nvim
-        - Debagging:
-          - echo "pane for debagging"
-  - Version-Control:
+        - debagging:
+          - echo $(date +%Y-%m-%d) $(date +%H:%M)
+  - version-control:
       layout: main-horizontal
       panes:
-        - Git-UI:
+        - git-ui:
+          - tmux resize-pane -t example:1.0 -D 10
           - lazygit
-        - Manual-Commands:
-          - git status
