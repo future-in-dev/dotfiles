@@ -209,6 +209,21 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
   if.app-id = 'ru.yandex.desktop.disk2'
   run = "move-node-to-workspace 1"
+[[on-window-detected]]
+  if.app-id = 'hossin.asaadi.V2Box'
+  run = "move-node-to-workspace 1"
+[[on-window-detected]]
+  if.app-id = 'com.blancvpn.app'
+  run = "move-node-to-workspace 1"
+[[on-window-detected]]
+  if.app-id = 'su.ffg.happ.plus'
+  run = "move-node-to-workspace 1"
+[[on-window-detected]]
+  if.app-id = 'org.outline.macos.client'
+  run = "move-node-to-workspace 1"
+[[on-window-detected]]
+  if.app-id = 'com.liguangming.Shadowrocket'
+  run = "move-node-to-workspace 1"
 
 # Workspace 2
 [[on-window-detected]]
@@ -220,10 +235,16 @@ alt-shift-l = ['join-with right', 'mode main']
 [[on-window-detected]]
   if.app-id = 'com.apple.MobileSMS'
   run = "move-node-to-workspace 2"
+[[on-window-detected]]
+  if.app-id = 'com.apple.mail'
+  run = "move-node-to-workspace 2"
 
 # Workspace 3
 [[on-window-detected]]
   if.app-id = 'com.todoist.mac.Todoist'
+  run = "move-node-to-workspace 3"
+[[on-window-detected]]
+  if.app-id = 'com.culturedcode.ThingsMac'
   run = "move-node-to-workspace 3"
 
 # Workspace 4
@@ -292,6 +313,15 @@ alt-shift-l = ['join-with right', 'mode main']
   run = "move-node-to-workspace 7"
 [[on-window-detected]]
   if.app-id = 'com.charliemchapman.dark-noise'
+  run = "move-node-to-workspace 7"
+[[on-window-detected]]
+  if.app-id = 'ai.perplexity.mac'
+  run = "move-node-to-workspace 7"
+[[on-window-detected]]
+  if.app-id = 'ai.elementlabs.lmstudio'
+  run = "move-node-to-workspace 7"
+[[on-window-detected]]
+  if.app-id = 'es.produkt.app.panels'
   run = "move-node-to-workspace 7"
 
 # Workspace 8
